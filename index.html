@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Midwest FPV | Brock Brown</title>
+<meta name="description" content="Freestyle FPV flying across Omaha and the Midwest. Flights, chases and quiet skies from DayOneJourneys." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --night:#020812; --night2:#0a2340; --ink:#071e3a;
+    --blue:#2b72b9; --sky:#7ec8f0; --maroon:#7c2637; --mustard:#b9851c;
+    --paper:#f5faff; --muted:#b7cad9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--night);color:var(--paper);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+  a{color:inherit}
+  .topbar{position:fixed;inset:0 0 auto;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(2,8,18,.82);backdrop-filter:blur(10px);border-bottom:3px solid var(--maroon)}
+  .brand{font-family:"Archivo Black",sans-serif;letter-spacing:.06em;font-size:1rem;text-transform:uppercase}
+  .brand em{font-style:normal;color:var(--sky)}
+  .topbar nav{display:flex;gap:20px}
+  .topbar nav a{text-decoration:none;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+  .topbar nav a:hover{color:var(--sky)}
+  .hero{padding:150px 22px 40px;max-width:1200px;margin:0 auto}
+  .tag{display:inline-block;background:var(--mustard);color:#0a0a0a;font-weight:700;font-size:.78rem;letter-spacing:.18em;padding:6px 12px;text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;text-transform:uppercase;line-height:.9;margin:22px 0 8px;font-size:clamp(3.4rem,13vw,10rem)}
+  h1 .row{display:block}
+  h1 .fpv{color:var(--sky)}
+  h1 .omaha{color:transparent;-webkit-text-stroke:2px var(--paper)}
+  .hero p{max-width:620px;font-size:1.12rem;line-height:1.65;color:var(--muted)}
+  .hero .watch{display:inline-block;margin-top:14px;background:var(--maroon);color:#fff;text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 22px}
+  .hero .watch:hover{background:var(--blue)}
+  .ticker{border-top:2px solid var(--night2);border-bottom:2px solid var(--night2);padding:12px 0;overflow:hidden;white-space:nowrap}
+  .ticker span{display:inline-block;font-family:"Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:1rem;color:var(--sky);padding-right:14px}
+  .ticker span b{color:var(--mustard);font-weight:400}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+  .feature{margin:44px auto 10px}
+  .feature .frame{position:relative;padding-top:56.25%;background:#000;box-shadow:14px 14px 0 var(--maroon)}
+  .feature iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .feature h2,.grid-sec h2,.gear h2{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,4.5vw,2.6rem);margin:0 0 6px}
+  .kicker{color:var(--mustard);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}
+  .grid-sec{margin:56px auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+  .card{position:relative;display:block;background:var(--night2);text-decoration:none;overflow:hidden}
+  .card.wide{grid-column:span 2}
+  .card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.92;transition:transform .3s ease,opacity .3s ease}
+  .card:hover img{transform:scale(1.04);opacity:1}
+  .card .play{position:absolute;top:10px;right:10px;background:var(--maroon);color:#fff;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
+  .card .card-title{display:block;padding:12px 14px 14px;font-weight:500;line-height:1.4}
+  .gear{margin:10px auto 70px}
+  .gear ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:18px 0 0}
+  .gear li{border:2px solid var(--blue);padding:12px 18px;font-weight:700;letter-spacing:.04em}
+  .gear li:nth-child(odd){border-color:var(--mustard)}
+  footer{border-top:3px solid var(--maroon);padding:26px 22px;text-align:center;color:var(--muted)}
+  footer a{color:var(--sky);text-decoration:none;font-weight:700}
+  @media (max-width:640px){ .card.wide{grid-column:span 1} .topbar nav a{letter-spacing:.06em} }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Brock Brown <em>FPV</em></div>
+    <nav>
+      <a href="https://www.youtube.com/@DayOneJourneys" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://brockbrown.org">Main Site</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <span class="tag">Omaha &middot; Nebraska &middot; Midwest</span>
+    <h1><span class="row">Midwest</span><span class="row fpv">FPV</span><span class="row omaha">On Air</span></h1>
+    <p>Freestyle flying in first person view across Omaha and the Midwest. Chases at the drag strip and the motocross track, fixed wing runs, night flights and quiet sunset lines, all from the DayOneJourneys channel.</p>
+    <a class="watch" href="https://www.youtube.com/playlist?list=PLeKveqPlNwlx55bL2xXxNyo45-0fqsVfR" target="_blank" rel="noopener">Watch the full playlist</a>
+  </header>
+
+  <div class="ticker" aria-hidden="true"><span>Freestyle <b>&middot;</b> Chases <b>&middot;</b> Fixed Wing <b>&middot;</b> Night Flights <b>&middot;</b> Sunsets <b>&middot;</b> Omaha <b>&middot;</b> Midwest <b>&middot;</b> Freestyle <b>&middot;</b> Chases <b>&middot;</b> Fixed Wing <b>&middot;</b> Night Flights <b>&middot;</b> Sunsets <b>&middot;</b> Omaha <b>&middot;</b> Midwest <b>&middot;</b></span></div>
+
+  <section class="wrap feature">
+    <p class="kicker">Now Playing</p>
+    <h2>The Midwest FPV Playlist</h2>
+    <div class="frame">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLeKveqPlNwlx55bL2xXxNyo45-0fqsVfR" title="Midwest FPV | Omaha &amp; Beyond playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="wrap grid-sec">
+    <p class="kicker">From the Playlist</p>
+    <h2>Flights</h2>
+    <div class="grid">
+      <a class="card wide" href="https://www.youtube.com/watch?v=aicV48YV7-Y" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/aicV48YV7-Y/hqdefault.jpg" alt="Time &amp; Space" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Time &amp; Space</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=xZKpAsHSNU4" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/xZKpAsHSNU4/hqdefault.jpg" alt="Free Fallin&rsquo;" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Free Fallin&rsquo;</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=T3h81RzKm0k" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/T3h81RzKm0k/hqdefault.jpg" alt="The Edge of Space | FPV" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">The Edge of Space | FPV</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=4L1Oc-4Afyc" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/4L1Oc-4Afyc/hqdefault.jpg" alt="Night Flights" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Night Flights</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=1ZHb4doDWnE" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/1ZHb4doDWnE/hqdefault.jpg" alt="House by the Side of the Road" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">House by the Side of the Road</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=ewWgGTBJBUM" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/ewWgGTBJBUM/hqdefault.jpg" alt="Behind the Scenes of This Insane FPV Drone Chase" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Behind the Scenes of This Insane FPV Drone Chase</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=564uLOSkPtk" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/564uLOSkPtk/hqdefault.jpg" alt="&ldquo;Surely You Can&rsquo;t Be Serious&hellip;&rdquo; | Airplane! Meets FPV" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">&ldquo;Surely You Can&rsquo;t Be Serious&hellip;&rdquo; | Airplane! Meets FPV</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=W3fhbGqnYWE" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/W3fhbGqnYWE/hqdefault.jpg" alt="Catching a Cessna on Final" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Catching a Cessna on Final</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=Z9w_5bGb3AE" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/Z9w_5bGb3AE/hqdefault.jpg" alt="This FPV Plane Chase Looks Insane in Slow Motion" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">This FPV Plane Chase Looks Insane in Slow Motion</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=XLyrI3AyPAw" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/XLyrI3AyPAw/hqdefault.jpg" alt="FPV: You Were Assigned to Chase a Cessna" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">FPV: You Were Assigned to Chase a Cessna</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=p7S17pLfhBU" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/p7S17pLfhBU/hqdefault.jpg" alt="When Life Feels Heavy, Keep Moving | A Sunset Trail Ride" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">When Life Feels Heavy, Keep Moving | A Sunset Trail Ride</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=gU5YYgphQgE" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/gU5YYgphQgE/hqdefault.jpg" alt="The Power of Quiet" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">The Power of Quiet</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap gear">
+    <p class="kicker">Gear</p>
+    <h2>In the Bag</h2>
+    <ul>
+      <li>DJI Avata 2</li>
+      <li>DJI Mini 4 Pro</li>
+      <li>DJI O4 Air Unit Builds</li>
+      <li>DJI Pocket 3</li>
+      <li>GoPro Max</li>
+      <li>DJI Mic</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brock Brown &middot; DayOneJourneys &middot; <a href="https://brockbrown.org">brockbrown.org</a></p>
+  </footer>
+</body>
+</html>
