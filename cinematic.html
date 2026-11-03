@@ -96,16 +96,28 @@
   a.cardlink h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:0 0 6px}
   a.cardlink p{color:var(--muted);line-height:1.55;margin:0}
 
-  .mainnav{border-bottom:3px solid var(--maroon);background:var(--night2)}
-  .mainnav .row2{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;gap:28px;flex-wrap:wrap}
-  .mainnav a{color:var(--muted);text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem}
-  .mainnav a:hover{color:var(--sky)}
-  .mainnav a.active{color:var(--sky)}
+  .menu-wrap{position:fixed;top:16px;right:18px;z-index:50}
+  .menu-btn{display:flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:42px;padding:0 11px;background:rgba(5,14,30,.88);border:1px solid rgba(126,200,240,.4);border-radius:9px;cursor:pointer}
+  .menu-btn span{display:block;height:2px;background:var(--paper);border-radius:2px}
+  .menu-btn:hover span{background:var(--sky)}
+  .menu-panel{display:none;position:absolute;top:52px;right:0;min-width:240px;background:var(--night2);border:1px solid rgba(126,200,240,.25);border-top:3px solid var(--maroon);box-shadow:0 18px 40px rgba(0,0,0,.5);padding:8px 0}
+  .menu-panel.open{display:block}
+  .menu-panel a{display:block;padding:12px 20px;color:var(--muted);text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+  .menu-panel a:hover{background:rgba(126,200,240,.08);color:var(--paper)}
+  .menu-panel a.active{color:var(--sky)}
 </style>
 </head>
 <body>
   <div class="topbar"></div>
-  <nav class="mainnav"><div class="row2"><a href="index.html">Home</a><a href="cinematic.html" class="active">Cinematic FPV Flying</a><a href="maintenance.html">FPV Drone Maintenance</a><a href="rules.html">Recreational Rules</a></div></nav>
+  <div class="menu-wrap">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+    <div class="menu-panel" id="menuPanel">
+      <a href="index.html">Home</a>
+      <a href="cinematic.html" class="active">Cinematic FPV Flying</a>
+      <a href="maintenance.html">FPV Drone Maintenance</a>
+      <a href="rules.html">Recreational Rules</a>
+    </div>
+  </div>
   <header class="hero">
     <span class="tag">Cinematic FPV Flying</span>
     <h1><span class="row">Cinematic</span><span class="row sky">FPV Flying</span></h1>
@@ -141,5 +153,8 @@
   <footer>
     <p>&copy; 2026 Brock Brown &middot; Midwest FPV &middot; <a href="https://www.youtube.com/@DayOneJourneys" target="_blank" rel="noopener">DayOneJourneys on YouTube</a></p>
   </footer>
+<script>
+(function(){var b=document.getElementById('menuBtn'),p=document.getElementById('menuPanel');function close(){p.classList.remove('open');b.setAttribute('aria-expanded','false')}b.addEventListener('click',function(e){e.stopPropagation();var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});document.addEventListener('click',function(e){if(!p.contains(e.target))close()});document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});})();
+</script>
 </body>
 </html>
