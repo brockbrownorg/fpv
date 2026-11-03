@@ -19,3 +19,9 @@
 ## Site
 
 - Home: https://fpv.brockbrown.org/
+
+## Pages
+
+- Cinematic FPV Flying: https://fpv.brockbrown.org/cinematic.html — planned lines, golden hour technique, DJI O4 Pro and GoPro Max recording, Gyroflow stabilization
+- FPV Drone Maintenance: https://fpv.brockbrown.org/maintenance.html — prop, motor and frame checks, LiPo charging and storage care, after crash checklist
+- Recreational Drone Rules: https://fpv.brockbrown.org/rules.html — the recreational exception, TRUST test, FAA registration, Remote ID, LAANC, 400 feet, visual line of sight for FPV

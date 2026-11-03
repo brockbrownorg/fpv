@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Recreational Drone Rules in Plain Language | TRUST, LAANC, Registration | Midwest FPV</title>
+<meta name="description" content="Recreational drone rules explained plainly: the recreational exception, the TRUST test, FAA registration and Remote ID, 400 feet, LAANC approval near Omaha and Wichita airports, and visual line of sight for FPV." />
+<link rel="canonical" href="https://fpv.brockbrown.org/rules.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --night:#020812; --night2:#0a2340; --ink:#071e3a;
+    --blue:#2b72b9; --sky:#7ec8f0; --maroon:#7c2637; --mustard:#b9851c;
+    --paper:#f5faff; --muted:#b7cad9;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--night);color:var(--paper);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+  a{color:inherit}
+  .topbar{position:fixed;inset:0 0 auto;z-index:30;display:flex;justify-content:flex-start;align-items:center;padding:4px 22px;background:rgba(2,8,18,.85);backdrop-filter:blur(10px);border-bottom:3px solid var(--maroon)}
+  .brand{font-family:"Archivo Black",sans-serif;letter-spacing:.06em;font-size:1rem;text-transform:uppercase}
+  .brand em{font-style:normal;color:var(--sky)}
+  .topbar nav{display:flex;gap:20px}
+  .topbar nav a{text-decoration:none;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+  .topbar nav a:hover{color:var(--sky)}
+  .hero{padding:64px 22px 30px;max-width:1200px;margin:0 auto}
+  .tag{display:inline-block;background:var(--mustard);color:#14100a;font-weight:700;font-size:.78rem;letter-spacing:.18em;padding:6px 12px;text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;text-transform:uppercase;line-height:.92;margin:22px 0 10px;font-size:clamp(2.6rem,9.5vw,7rem)}
+  h1 .row{display:block}
+  h1 .sky{color:var(--sky)}
+  h1 .outline{color:transparent;-webkit-text-stroke:2px var(--paper)}
+  .hero .sub{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:700;margin:0 0 10px}
+  .hero .sub span{color:var(--mustard)}
+  .hero p{max-width:640px;font-size:1.08rem;line-height:1.65;color:var(--muted)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 22px}
+  .btn.primary{background:var(--maroon);color:#fff}
+  .btn.primary:hover{background:var(--blue)}
+  .btn.ghost{border:2px solid var(--sky);color:var(--sky)}
+  .btn.ghost:hover{background:var(--night2)}
+  .stats{max-width:1200px;margin:34px auto 0;padding:0 22px}
+  .stats .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px;background:var(--night2);border-top:4px solid var(--mustard)}
+  .stats .cell{background:var(--ink);padding:18px}
+  .stats .num{font-family:"Archivo Black",sans-serif;font-size:1.7rem;color:var(--sky)}
+  .stats .lbl{color:var(--muted);font-size:.92rem;margin-top:2px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+  section.block{margin:60px auto}
+  .kicker{color:var(--mustard);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}
+  h2{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,4.5vw,2.6rem);margin:0 0 8px;line-height:1.05}
+  .lede{color:var(--muted);max-width:680px;line-height:1.65;font-size:1.05rem}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+  .service{background:var(--night2);padding:24px;border-top:5px solid var(--blue)}
+  .service:nth-child(2){border-top-color:var(--maroon)}
+  .service:nth-child(3){border-top-color:var(--mustard)}
+  .service h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.15rem;margin:0 0 8px}
+  .service p{color:var(--muted);line-height:1.6;margin:0}
+  .feature .frame{position:relative;padding-top:56.25%;background:#000;box-shadow:14px 14px 0 var(--maroon);margin-top:18px}
+  .feature iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+  .card{position:relative;display:block;background:var(--night2);text-decoration:none;overflow:hidden}
+  .card.wide{grid-column:span 2}
+  .card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.92;transition:transform .3s ease,opacity .3s ease}
+  .card:hover img{transform:scale(1.04);opacity:1}
+  .card .play{position:absolute;top:10px;right:10px;background:var(--maroon);color:#fff;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
+  .card .card-title{display:block;padding:12px 14px 14px;font-weight:500;line-height:1.4}
+  .areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:22px}
+  .area{background:var(--ink);padding:24px}
+  .area h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;margin:0 0 8px;font-size:1.2rem;color:var(--sky)}
+  .area p{color:var(--muted);line-height:1.6;margin:0}
+  .gear h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:26px 0 0;letter-spacing:.04em}
+  .gear ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:14px 0 0}
+  .gear li{border:2px solid var(--blue);padding:12px 18px;font-weight:700;letter-spacing:.04em}
+  .gear li:nth-child(odd){border-color:var(--mustard)}
+  .ctaband{background:var(--maroon);padding:44px 22px;text-align:center}
+  .ctaband h2{color:#fff}
+  .ctaband p{color:#f3d9de;max-width:620px;margin:8px auto 0;line-height:1.6}
+  .ctaband .btn{margin-top:20px;background:#fff;color:var(--maroon)}
+  .ctaband .btn:hover{background:var(--sky);color:var(--ink)}
+  footer{padding:26px 22px;text-align:center;color:var(--muted)}
+  footer a{color:var(--sky);text-decoration:none;font-weight:700}
+  @media (max-width:640px){ .card.wide{grid-column:span 1} }
+
+  .backlink{display:inline-block;margin-bottom:18px;color:var(--sky);text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+  .prose{max-width:760px}
+  .prose p{color:var(--muted);line-height:1.7;font-size:1.05rem;margin:0 0 16px}
+  .prose h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.15rem;margin:30px 0 8px;color:var(--paper)}
+  .prose ul{color:var(--muted);line-height:1.7;font-size:1.05rem;margin:0 0 16px;padding-left:20px}
+  .prose li{margin-bottom:8px}
+  .prose strong{color:var(--paper)}
+  .explorenav{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+  a.cardlink{display:block;background:var(--night2);padding:22px;border-top:5px solid var(--blue);text-decoration:none}
+  a.cardlink:nth-child(2){border-top-color:var(--maroon)}
+  a.cardlink:nth-child(3){border-top-color:var(--mustard)}
+  a.cardlink h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:0 0 6px}
+  a.cardlink p{color:var(--muted);line-height:1.55;margin:0}
+</style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <header class="hero">
+    <a class="backlink" href="index.html">&larr; Midwest FPV Home</a>
+    <br />
+    <span class="tag">Recreational Drone Rules</span>
+    <h1><span class="row">Rules for</span><span class="row sky">Recreational Flying</span></h1>
+  </header>
+  <main class="wrap">
+    <div class="prose">
+      <p>I fly for fun, and flying for fun in the United States still comes with rules. They are not hard to follow once someone lays them out in plain language, so here is the version I wish someone had handed me at the start. This is my summary as a recreational flyer in Nebraska and Kansas. It is not legal advice, and the FAA site is the final word before you fly.</p>
+      <h3>The recreational exception</h3>
+      <p>Recreational flying sits under the Exception for Recreational Flyers in federal law. In plain terms: you fly only for recreation, you follow the safety guidelines of a community based organization such as the Academy of Model Aeronautics, and you take responsibility for every flight.</p>
+      <h3>TRUST: the safety test</h3>
+      <p>Every recreational flyer must pass TRUST, The Recreational UAS Safety Test. It is free, it is online, it cannot be failed, and it takes about half an hour. Carry the completion certificate, on paper or on your phone, whenever you fly.</p>
+      <h3>Registration</h3>
+      <p>If your drone weighs 0.55 pounds or more at takeoff, it must be registered with the FAA through DroneZone, and the registration number goes on the outside of the aircraft. One registration covers your whole recreational fleet. Most drones that need registration also need Remote ID, either built in or through a broadcast module, unless you fly at an FAA recognized identification area. My DJI aircraft broadcast it natively, and my FPV quads carry modules where they need them.</p>
+      <h3>Airspace and altitude</h3>
+      <ul>
+        <li><strong>400 feet.</strong> Stay at or below 400 feet above the ground in uncontrolled airspace.</li>
+        <li><strong>Controlled airspace needs approval.</strong> Near airports such as Eppley Airfield in Omaha or Eisenhower National in Wichita, get authorization first through LAANC in an approved app, and stay at or below the altitude it grants.</li>
+        <li><strong>Give way, always.</strong> Never fly near other aircraft, and never interfere with emergency response, firefighting or law enforcement activity.</li>
+      </ul>
+      <h3>Line of sight and FPV</h3>
+      <p>The aircraft must stay within visual line of sight. For FPV flying with goggles, that means a visual observer standing beside you who can see the aircraft with the naked eye and call out anything you cannot see. It also makes the day more fun, since half the stories start with what the observer spotted first.</p>
+      <h3>Local rules still apply</h3>
+      <p>Cities, parks and landowners can set their own rules for takeoff and landing on their property. Omaha and Wichita area parks vary, so check before you fly, be courteous, and leave every spot cleaner than you found it. A good ambassador keeps the sky open for everyone.</p>
+      <p>Fly safe, fly legal, and the hobby stays open to all of us.</p>
+    </div>
+    <section class="block" style="margin-top:10px">
+      <p class="kicker">Keep Exploring</p>
+      <h2>More from Midwest FPV</h2>
+      <div class="explorenav">
+        <a class="cardlink" href="cinematic.html"><h3>Cinematic FPV Flying</h3><p>How smooth, film worthy FPV footage happens, from golden hour lines to Gyroflow.</p></a>
+        <a class="cardlink" href="maintenance.html"><h3>FPV Drone Maintenance</h3><p>The checks and LiPo care that keep the fleet flying season after season.</p></a>
+        <a class="cardlink" href="rules.html"><h3>Recreational Drone Rules</h3><p>TRUST, registration, LAANC and line of sight, in plain language.</p></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Brock Brown &middot; Midwest FPV &middot; <a href="https://www.youtube.com/@DayOneJourneys" target="_blank" rel="noopener">DayOneJourneys on YouTube</a></p>
+  </footer>
+</body>
+</html>

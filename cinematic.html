@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cinematic FPV Flying | Smooth Drone Footage | Midwest FPV</title>
+<meta name="description" content="How cinematic FPV footage happens: planned lines, golden hour light over Omaha, Nebraska and the Kansas plains, DJI O4 Pro and GoPro Max recording, and Gyroflow stabilization." />
+<link rel="canonical" href="https://fpv.brockbrown.org/cinematic.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --night:#020812; --night2:#0a2340; --ink:#071e3a;
+    --blue:#2b72b9; --sky:#7ec8f0; --maroon:#7c2637; --mustard:#b9851c;
+    --paper:#f5faff; --muted:#b7cad9;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--night);color:var(--paper);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+  a{color:inherit}
+  .topbar{position:fixed;inset:0 0 auto;z-index:30;display:flex;justify-content:flex-start;align-items:center;padding:4px 22px;background:rgba(2,8,18,.85);backdrop-filter:blur(10px);border-bottom:3px solid var(--maroon)}
+  .brand{font-family:"Archivo Black",sans-serif;letter-spacing:.06em;font-size:1rem;text-transform:uppercase}
+  .brand em{font-style:normal;color:var(--sky)}
+  .topbar nav{display:flex;gap:20px}
+  .topbar nav a{text-decoration:none;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+  .topbar nav a:hover{color:var(--sky)}
+  .hero{padding:64px 22px 30px;max-width:1200px;margin:0 auto}
+  .tag{display:inline-block;background:var(--mustard);color:#14100a;font-weight:700;font-size:.78rem;letter-spacing:.18em;padding:6px 12px;text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;text-transform:uppercase;line-height:.92;margin:22px 0 10px;font-size:clamp(2.6rem,9.5vw,7rem)}
+  h1 .row{display:block}
+  h1 .sky{color:var(--sky)}
+  h1 .outline{color:transparent;-webkit-text-stroke:2px var(--paper)}
+  .hero .sub{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:700;margin:0 0 10px}
+  .hero .sub span{color:var(--mustard)}
+  .hero p{max-width:640px;font-size:1.08rem;line-height:1.65;color:var(--muted)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 22px}
+  .btn.primary{background:var(--maroon);color:#fff}
+  .btn.primary:hover{background:var(--blue)}
+  .btn.ghost{border:2px solid var(--sky);color:var(--sky)}
+  .btn.ghost:hover{background:var(--night2)}
+  .stats{max-width:1200px;margin:34px auto 0;padding:0 22px}
+  .stats .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px;background:var(--night2);border-top:4px solid var(--mustard)}
+  .stats .cell{background:var(--ink);padding:18px}
+  .stats .num{font-family:"Archivo Black",sans-serif;font-size:1.7rem;color:var(--sky)}
+  .stats .lbl{color:var(--muted);font-size:.92rem;margin-top:2px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+  section.block{margin:60px auto}
+  .kicker{color:var(--mustard);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}
+  h2{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,4.5vw,2.6rem);margin:0 0 8px;line-height:1.05}
+  .lede{color:var(--muted);max-width:680px;line-height:1.65;font-size:1.05rem}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+  .service{background:var(--night2);padding:24px;border-top:5px solid var(--blue)}
+  .service:nth-child(2){border-top-color:var(--maroon)}
+  .service:nth-child(3){border-top-color:var(--mustard)}
+  .service h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.15rem;margin:0 0 8px}
+  .service p{color:var(--muted);line-height:1.6;margin:0}
+  .feature .frame{position:relative;padding-top:56.25%;background:#000;box-shadow:14px 14px 0 var(--maroon);margin-top:18px}
+  .feature iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+  .card{position:relative;display:block;background:var(--night2);text-decoration:none;overflow:hidden}
+  .card.wide{grid-column:span 2}
+  .card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.92;transition:transform .3s ease,opacity .3s ease}
+  .card:hover img{transform:scale(1.04);opacity:1}
+  .card .play{position:absolute;top:10px;right:10px;background:var(--maroon);color:#fff;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
+  .card .card-title{display:block;padding:12px 14px 14px;font-weight:500;line-height:1.4}
+  .areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:22px}
+  .area{background:var(--ink);padding:24px}
+  .area h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;margin:0 0 8px;font-size:1.2rem;color:var(--sky)}
+  .area p{color:var(--muted);line-height:1.6;margin:0}
+  .gear h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:26px 0 0;letter-spacing:.04em}
+  .gear ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:14px 0 0}
+  .gear li{border:2px solid var(--blue);padding:12px 18px;font-weight:700;letter-spacing:.04em}
+  .gear li:nth-child(odd){border-color:var(--mustard)}
+  .ctaband{background:var(--maroon);padding:44px 22px;text-align:center}
+  .ctaband h2{color:#fff}
+  .ctaband p{color:#f3d9de;max-width:620px;margin:8px auto 0;line-height:1.6}
+  .ctaband .btn{margin-top:20px;background:#fff;color:var(--maroon)}
+  .ctaband .btn:hover{background:var(--sky);color:var(--ink)}
+  footer{padding:26px 22px;text-align:center;color:var(--muted)}
+  footer a{color:var(--sky);text-decoration:none;font-weight:700}
+  @media (max-width:640px){ .card.wide{grid-column:span 1} }
+
+  .backlink{display:inline-block;margin-bottom:18px;color:var(--sky);text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+  .prose{max-width:760px}
+  .prose p{color:var(--muted);line-height:1.7;font-size:1.05rem;margin:0 0 16px}
+  .prose h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.15rem;margin:30px 0 8px;color:var(--paper)}
+  .prose ul{color:var(--muted);line-height:1.7;font-size:1.05rem;margin:0 0 16px;padding-left:20px}
+  .prose li{margin-bottom:8px}
+  .prose strong{color:var(--paper)}
+  .explorenav{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+  a.cardlink{display:block;background:var(--night2);padding:22px;border-top:5px solid var(--blue);text-decoration:none}
+  a.cardlink:nth-child(2){border-top-color:var(--maroon)}
+  a.cardlink:nth-child(3){border-top-color:var(--mustard)}
+  a.cardlink h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:0 0 6px}
+  a.cardlink p{color:var(--muted);line-height:1.55;margin:0}
+</style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <header class="hero">
+    <a class="backlink" href="index.html">&larr; Midwest FPV Home</a>
+    <br />
+    <span class="tag">Cinematic FPV Flying</span>
+    <h1><span class="row">Cinematic</span><span class="row sky">FPV Flying</span></h1>
+  </header>
+  <main class="wrap">
+    <div class="prose">
+      <p>Cinematic FPV is not about flying faster. It is about flying with intent. The footage that feels like film comes from a planned line, gentle hands and the right light, long before anyone opens an editor. This is how I approach the smooth flights on the DayOneJourneys channel, from sunset lines over Omaha lakes to slow reveals above the Kansas plains.</p>
+      <h3>Plan the line first</h3>
+      <p>Every good shot starts on the ground. I walk the spot, pick the subject, and decide the one move the shot needs: a reveal over a tree line, an orbit around a water tower, a low pass along a river. One move per flight keeps the footage calm and gives the viewer a clear story. If the line does not work at walking speed in my head, it will not work at flying speed with goggles on.</p>
+      <h3>Flying for the camera</h3>
+      <ul>
+        <li><strong>Slow hands.</strong> Small stick movements and smooth throttle changes read as confidence on screen. Jerky corrections are the first thing a viewer feels.</li>
+        <li><strong>Fly the whole line.</strong> Start before the moment and end after it. Editors need handles, and the best frames are often at the edges.</li>
+        <li><strong>Chase the light.</strong> The hour after sunrise and the hour before sunset turn flat fields into cinema. Most of my favorite Nebraska and Kansas footage was shot in that window.</li>
+        <li><strong>Use the landscape.</strong> Tree lines, shorelines and fence rows give the camera something to travel along. Open sky alone rarely holds attention.</li>
+      </ul>
+      <h3>Cameras and settings</h3>
+      <p>Most of my cinematic flights are recorded on the DJI O4 Pro Air Unit or the GoPro Max. The Max earns its place when a shot might need reframing later, since the 360 capture lets me choose the angle in the edit. A slower shutter with a neutral density filter gives natural motion blur, the small detail that makes fast footage feel like film instead of a video game.</p>
+      <h3>Stabilization and the edit</h3>
+      <p>Gyroflow is the quiet hero of my workflow. The gyro data recorded in flight smooths out wind bumps and small vibrations while keeping the sense of speed. In DaVinci Resolve or CapCut I keep cuts simple: music that matches the pace of the line, gentle color work, and enough real moments between moves for the viewer to breathe.</p>
+      <p>The goal is never to show off the drone. The goal is to make the viewer forget the drone is there at all.</p>
+    </div>
+    <section class="block" style="margin-top:10px">
+      <p class="kicker">Keep Exploring</p>
+      <h2>More from Midwest FPV</h2>
+      <div class="explorenav">
+        <a class="cardlink" href="cinematic.html"><h3>Cinematic FPV Flying</h3><p>How smooth, film worthy FPV footage happens, from golden hour lines to Gyroflow.</p></a>
+        <a class="cardlink" href="maintenance.html"><h3>FPV Drone Maintenance</h3><p>The checks and LiPo care that keep the fleet flying season after season.</p></a>
+        <a class="cardlink" href="rules.html"><h3>Recreational Drone Rules</h3><p>TRUST, registration, LAANC and line of sight, in plain language.</p></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Brock Brown &middot; Midwest FPV &middot; <a href="https://www.youtube.com/@DayOneJourneys" target="_blank" rel="noopener">DayOneJourneys on YouTube</a></p>
+  </footer>
+</body>
+</html>
