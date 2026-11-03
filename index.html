@@ -105,11 +105,19 @@
   footer{padding:26px 22px;text-align:center;color:var(--muted)}
   footer a{color:var(--sky);text-decoration:none;font-weight:700}
   @media (max-width:640px){ .card.wide{grid-column:span 1} }
+
+  .mainnav{border-bottom:3px solid var(--maroon);background:var(--night2)}
+  .mainnav .row2{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;gap:28px;flex-wrap:wrap}
+  .mainnav a{color:var(--muted);text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem}
+  .mainnav a:hover{color:var(--sky)}
+  .mainnav a.active{color:var(--sky)}
 </style>
 </head>
 <body>
   <div class="topbar">
   </div>
+
+  <nav class="mainnav"><div class="row2"><a href="index.html" class="active">Home</a><a href="cinematic.html">Cinematic FPV Flying</a><a href="maintenance.html">FPV Drone Maintenance</a><a href="rules.html">Recreational Rules</a></div></nav>
 
   <header class="hero">
     <span class="tag">FPV Drone Flying &middot; Omaha &middot; Wichita</span>
