@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>More FPV Videos | The Full Midwest FPV Library | Midwest FPV</title>
+<meta name="description" content="More FPV drone videos from the Midwest FPV library: sunset flights over Omaha, Nebraska, plane chases in Kansas, freestyle runs and golden hour lines from the DayOneJourneys channel." />
+<link rel="canonical" href="https://fpv.brockbrown.org/videos.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --night:#020812; --night2:#0a2340; --ink:#071e3a;
+    --blue:#2b72b9; --sky:#7ec8f0; --maroon:#7c2637; --mustard:#b9851c;
+    --paper:#f5faff; --muted:#b7cad9;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--night);color:var(--paper);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+  a{color:inherit}
+  .topbar{position:fixed;inset:0 0 auto;z-index:30;display:flex;justify-content:flex-start;align-items:center;padding:4px 22px;background:rgba(2,8,18,.85);backdrop-filter:blur(10px);border-bottom:3px solid var(--maroon)}
+  .brand{font-family:"Archivo Black",sans-serif;letter-spacing:.06em;font-size:1rem;text-transform:uppercase}
+  .brand em{font-style:normal;color:var(--sky)}
+  .topbar nav{display:flex;gap:20px}
+  .topbar nav a{text-decoration:none;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+  .topbar nav a:hover{color:var(--sky)}
+  .hero{padding:64px 22px 30px;max-width:1200px;margin:0 auto}
+  .tag{display:inline-block;background:var(--mustard);color:#14100a;font-weight:700;font-size:.78rem;letter-spacing:.18em;padding:6px 12px;text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;text-transform:uppercase;line-height:.92;margin:22px 0 10px;font-size:clamp(2.6rem,9.5vw,7rem)}
+  h1 .row{display:block}
+  h1 .sky{color:var(--sky)}
+  h1 .outline{color:transparent;-webkit-text-stroke:2px var(--paper)}
+  .hero .sub{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:700;margin:0 0 10px}
+  .hero .sub span{color:var(--mustard)}
+  .hero p{max-width:640px;font-size:1.08rem;line-height:1.65;color:var(--muted)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:14px 22px}
+  .btn.primary{background:var(--maroon);color:#fff}
+  .btn.primary:hover{background:var(--blue)}
+  .btn.ghost{border:2px solid var(--sky);color:var(--sky)}
+  .btn.ghost:hover{background:var(--night2)}
+  .stats{max-width:1200px;margin:34px auto 0;padding:0 22px}
+  .stats .band{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px;background:var(--night2);border-top:4px solid var(--mustard)}
+  .stats .cell{background:var(--ink);padding:18px}
+  .stats .num{font-family:"Archivo Black",sans-serif;font-size:1.7rem;color:var(--sky)}
+  .stats .lbl{color:var(--muted);font-size:.92rem;margin-top:2px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+  section.block{margin:60px auto}
+  .kicker{color:var(--mustard);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}
+  h2{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,4.5vw,2.6rem);margin:0 0 8px;line-height:1.05}
+  .lede{color:var(--muted);max-width:680px;line-height:1.65;font-size:1.05rem}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+  .service{background:var(--night2);padding:24px;border-top:5px solid var(--blue)}
+  .service:nth-child(2){border-top-color:var(--maroon)}
+  .service:nth-child(3){border-top-color:var(--mustard)}
+  .service h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.15rem;margin:0 0 8px}
+  .service p{color:var(--muted);line-height:1.6;margin:0}
+  .feature .frame{position:relative;padding-top:56.25%;background:#000;box-shadow:14px 14px 0 var(--maroon);margin-top:18px}
+  .feature iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+  .card{position:relative;display:block;background:var(--night2);text-decoration:none;overflow:hidden}
+  .card.wide{grid-column:span 2}
+  .card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.92;transition:transform .3s ease,opacity .3s ease}
+  .card:hover img{transform:scale(1.04);opacity:1}
+  .card .play{position:absolute;top:10px;right:10px;background:var(--maroon);color:#fff;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
+  .card .card-title{display:block;padding:12px 14px 14px;font-weight:500;line-height:1.4}
+  .areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:22px}
+  .area{background:var(--ink);padding:24px}
+  .area h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;margin:0 0 8px;font-size:1.2rem;color:var(--sky)}
+  .area p{color:var(--muted);line-height:1.6;margin:0}
+  .gear h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:1.05rem;margin:26px 0 0;letter-spacing:.04em}
+  .gear ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:14px 0 0}
+  .gear li{border:2px solid var(--blue);padding:12px 18px;font-weight:700;letter-spacing:.04em}
+  .gear li:nth-child(odd){border-color:var(--mustard)}
+  .ctaband{background:var(--maroon);padding:44px 22px;text-align:center}
+  .ctaband h2{color:#fff}
+  .ctaband p{color:#f3d9de;max-width:620px;margin:8px auto 0;line-height:1.6}
+  .ctaband .btn{margin-top:20px;background:#fff;color:var(--maroon)}
+  .ctaband .btn:hover{background:var(--sky);color:var(--ink)}
+  footer{padding:26px 22px;text-align:center;color:var(--muted)}
+  footer a{color:var(--sky);text-decoration:none;font-weight:700}
+  @media (max-width:640px){ .card.wide{grid-column:span 1} }
+
+  .mainnav{border-bottom:3px solid var(--maroon);background:var(--night2)}
+  .mainnav .row2{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;gap:28px;flex-wrap:wrap}
+  .mainnav a{color:var(--muted);text-decoration:none;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem}
+  .mainnav a:hover{color:var(--sky)}
+  .mainnav a.active{color:var(--sky)}
+</style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <nav class="mainnav"><div class="row2"><a href="index.html">Home</a><a href="cinematic.html">Cinematic FPV Flying</a><a href="maintenance.html">FPV Drone Maintenance</a><a href="rules.html">Recreational Rules</a></div></nav>
+  <header class="hero">
+    <span class="tag">More Videos</span>
+    <h1><span class="row">More</span><span class="row sky">Flights</span></h1>
+    <p>The home page shows the latest dozen. Here is the next stretch of the Midwest FPV library, with the full playlist player up top so you can settle in and watch them in order.</p>
+  </header>
+  <main class="wrap">
+    <section class="block" style="margin-top:6px">
+      <p class="kicker">Full Playlist Player</p>
+      <h2>Watch the Whole Library</h2>
+      <article class="feature">
+        <div class="frame"><iframe src="https://www.youtube.com/embed/videoseries?list=PLeKveqPlNwlx55bL2xXxNyo45-0fqsVfR" title="Midwest FPV | Omaha &amp; Beyond playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+      </article>
+    </section>
+    <section class="block">
+      <p class="kicker">Keep Watching</p>
+      <h2>More from the Playlist</h2>
+      <div class="grid">
+      <a class="card" href="https://www.youtube.com/watch?v=viq9MNNufac" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/viq9MNNufac/hqdefault.jpg" alt="Omaha Like You've Never Seen FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Omaha Like You've Never Seen</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=IXCBKEGq15M" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/IXCBKEGq15M/hqdefault.jpg" alt="You Won't Believe This Sunset FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">You Won't Believe This Sunset</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=40srtg-0eG4" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/40srtg-0eG4/hqdefault.jpg" alt="This Omaha Sunset Doesn't Feel Real | FPV Over Lake Zorinsky FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">This Omaha Sunset Doesn't Feel Real | FPV Over Lake Zorinsky</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=qAUy-L9hB1s" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/qAUy-L9hB1s/hqdefault.jpg" alt="FPV Racing Drone Chasing RC Airplanes FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">FPV Racing Drone Chasing RC Airplanes</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=VL0pXUgiuV4" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/VL0pXUgiuV4/hqdefault.jpg" alt="Chasing a Bellanca Cruisair over Kansas Skies FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Chasing a Bellanca Cruisair over Kansas Skies</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=4C4ME770M8g" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/4C4ME770M8g/hqdefault.jpg" alt="Golden Hour Flight | Fell in a Lake FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Golden Hour Flight | Fell in a Lake</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=Ty2_ZpUimVc" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/Ty2_ZpUimVc/hqdefault.jpg" alt="Are You Afraid of Heights? FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Are You Afraid of Heights?</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=B7zOMaxHrRU" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/B7zOMaxHrRU/hqdefault.jpg" alt="Chasing Airplanes in Kansas FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Chasing Airplanes in Kansas</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=PfqI5Pvta1A" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/PfqI5Pvta1A/hqdefault.jpg" alt="No Hands... Landing? FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">No Hands... Landing?</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=gnWEv0bxa3s" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/gnWEv0bxa3s/hqdefault.jpg" alt="Golden Hour Goose Chase | Chasing Birds over Kansas Fields FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Golden Hour Goose Chase | Chasing Birds over Kansas Fields</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=_arhgBEpF2Q" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/_arhgBEpF2Q/hqdefault.jpg" alt="Beautiful Omaha Nebraska Sunset Flight FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Beautiful Omaha Nebraska Sunset Flight</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=RgVlxu9KzBM" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/RgVlxu9KzBM/hqdefault.jpg" alt="DJI Avata 2 Indoor FPV Test FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">DJI Avata 2 Indoor FPV Test</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=FDErHK_3lps" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/FDErHK_3lps/hqdefault.jpg" alt="Omaha Golden Hour | FPV Flight at Sunset FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Omaha Golden Hour | FPV Flight at Sunset</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=eQZzToaC-TI" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/eQZzToaC-TI/hqdefault.jpg" alt="Flying in the Clouds Today FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Flying in the Clouds Today</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=IrtQdTDeM0U" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/IrtQdTDeM0U/hqdefault.jpg" alt="My First FPV Flight FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">My First FPV Flight</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=FYg01AKxB_s" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/FYg01AKxB_s/hqdefault.jpg" alt="That Time I Met Gene P. at Joslyn Castle FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">That Time I Met Gene P. at Joslyn Castle</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=xmcjwY3yDJg" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/xmcjwY3yDJg/hqdefault.jpg" alt="FPV Freestyle FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">FPV Freestyle</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=FcZx9wjBG04" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/FcZx9wjBG04/hqdefault.jpg" alt="Your Private Air Show | Omaha FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Your Private Air Show | Omaha</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=5nqJ3nHBmSo" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/5nqJ3nHBmSo/hqdefault.jpg" alt="Breathe In The Sky FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Breathe In The Sky</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=gQnNm2PFZHE" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/gQnNm2PFZHE/hqdefault.jpg" alt="I Found a WWII Plane FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">I Found a WWII Plane</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=iUTcqp6NvLU" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/iUTcqp6NvLU/hqdefault.jpg" alt="Spring Evening in Littleton, Kansas FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Spring Evening in Littleton, Kansas</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=KmTdFsPICek" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/KmTdFsPICek/hqdefault.jpg" alt="Spring Flowers in Omaha, Nebraska FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Spring Flowers in Omaha, Nebraska</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=ZhvCpw-eqaM" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/ZhvCpw-eqaM/hqdefault.jpg" alt="Cessna Chasing | Catching a Cessna on Final at Millard Airport FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Cessna Chasing | Catching a Cessna on Final at Millard Airport</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=UUAlSlvZ77I" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/UUAlSlvZ77I/hqdefault.jpg" alt="Cotton Candy Skies over Littleton, Kansas FPV drone video" loading="lazy" />
+        <span class="play">&#9654;</span>
+        <span class="card-title">Cotton Candy Skies over Littleton, Kansas</span>
+      </a>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="https://www.youtube.com/playlist?list=PLeKveqPlNwlx55bL2xXxNyo45-0fqsVfR" target="_blank" rel="noopener">Watch the Full Playlist on YouTube</a>
+        <a class="btn ghost" href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Brock Brown &middot; Midwest FPV &middot; <a href="https://www.youtube.com/@DayOneJourneys" target="_blank" rel="noopener">DayOneJourneys on YouTube</a></p>
+  </footer>
+</body>
+</html>
